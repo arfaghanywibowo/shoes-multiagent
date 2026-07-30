@@ -27,7 +27,7 @@ if (!is_dir($dataDir)) {
 
 // On Vercel first boot, copy seed files from static /data into /tmp so we have initial products
 $staticDataDir = dirname(__DIR__) . '/data';
-foreach (['products.json'] as $seedFile) {
+foreach (['products.json', 'chats.json'] as $seedFile) {
     $tmpPath    = $dataDir . '/' . $seedFile;
     $staticPath = $staticDataDir . '/' . $seedFile;
     if (!file_exists($tmpPath) && file_exists($staticPath)) {

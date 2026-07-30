@@ -322,11 +322,41 @@ document.addEventListener('DOMContentLoaded', () => {
         fetch('/api/chats')
             .then(res => res.json())
             .then(data => {
-                state.chats = data;
+                state.chats = Array.isArray(data) ? data : [];
+                
+                if (state.chats.length === 0) {
+                    // No sessions exist (Vercel cold start) — create one
+                    return createNewChatSession().then(() => {
+                        renderSessionsList();
+                        renderCurrentSession();
+                    });
+                }
+                
+                // Auto-select first session if current one doesn't exist
+                const currentExists = state.chats.some(c => c.id === state.currentSessionId);
+                if (!currentExists) {
+                    state.currentSessionId = state.chats[0].id;
+                }
+                
                 renderSessionsList();
                 renderCurrentSession();
             })
             .catch(err => console.error('Error fetching chats:', err));
+    }
+
+    // Creates a new chat session via API and updates state
+    function createNewChatSession() {
+        return fetch('/api/chats', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ title: 'Obrolan Baru' })
+        })
+        .then(res => res.json())
+        .then(newChat => {
+            state.chats.push(newChat);
+            state.currentSessionId = newChat.id;
+        })
+        .catch(err => console.error('Error creating chat session:', err));
     }
 
     function renderSessionsList() {
@@ -522,6 +552,13 @@ document.addEventListener('DOMContentLoaded', () => {
         elements.chatMessagesContainer.appendChild(typingBubble);
         scrollToBottom();
 
+        // Ensure we have a valid session before sending
+        const sessionExists = state.chats.some(c => c.id === state.currentSessionId);
+        const doSend = sessionExists 
+            ? Promise.resolve() 
+            : createNewChatSession();
+        
+        doSend.then(() => {
         // Post to API
         fetch('/api/chats/message', {
             method: 'POST',
@@ -563,6 +600,7 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error('Error sending message:', err);
             showToast('Kesalahan koneksi ke server.');
         });
+        }); // end doSend.then
     }
 
     function speakText(text) {
