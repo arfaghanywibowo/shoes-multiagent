@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 2. SETTINGS & THEMING
     // ==========================================
     function loadSettings() {
-        fetch('http://localhost:8000/api.php/settings')
+        fetch('/api/settings')
             .then(res => res.json())
             .then(data => {
                 state.settings = data;
@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (elements.settingsDarkMode) elements.settingsDarkMode.checked = value;
         }
 
-        fetch('http://localhost:8000/api.php/settings', {
+        fetch('/api/settings', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ [key]: value })
@@ -263,7 +263,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (elements.btnClearChats) {
             elements.btnClearChats.addEventListener('click', () => {
                 if (confirm('Apakah Anda yakin ingin menghapus semua riwayat chat?')) {
-                    fetch('http://localhost:8000/api.php/settings/clear-chats', { method: 'POST' })
+                    fetch('/api/settings/clear-chats', { method: 'POST' })
                         .then(res => res.json())
                         .then(res => {
                             if (res.status === 'success') {
@@ -319,7 +319,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 4. CHAT HISTORY & MESSAGING
     // ==========================================
     function loadChats() {
-        fetch('http://localhost:8000/api.php/chats')
+        fetch('/api/chats')
             .then(res => res.json())
             .then(data => {
                 state.chats = data;
@@ -523,7 +523,7 @@ document.addEventListener('DOMContentLoaded', () => {
         scrollToBottom();
 
         // Post to API
-        fetch('http://localhost:8000/api.php/chats/message', {
+        fetch('/api/chats/message', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -592,7 +592,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 5. PRODUCTS CATALOG DISPLAY
     // ==========================================
     function loadProducts() {
-        fetch('http://localhost:8000/api.php/products')
+        fetch('/api/products')
             .then(res => res.json())
             .then(data => {
                 state.products = data;
@@ -660,7 +660,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 6. AGENTS OVERVIEW DISPLAY
     // ==========================================
     function loadAgents() {
-        fetch('http://localhost:8000/api.php/agents')
+        fetch('/api/agents')
             .then(res => res.json())
             .then(data => {
                 state.agents = data;
@@ -788,7 +788,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function uploadProductsJson(products) {
-        fetch('http://localhost:8000/api.php/products/import', {
+        fetch('/api/products/import', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(products)
