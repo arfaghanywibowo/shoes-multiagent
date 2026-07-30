@@ -1,0 +1,1388 @@
+[
+    {
+        "id": 1,
+        "name": "Nike Air Jordan 1",
+        "brand": "Nike",
+        "price": 1850000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5f",
+        "gradient": "linear-gradient(135deg, #3b82f6, #8b5cf6)"
+    },
+    {
+        "id": 2,
+        "name": "Air Jordan 1 Low",
+        "brand": "Nike",
+        "price": 1200000,
+        "grade": "Grade B",
+        "emoji": "\ud83d\udc5f",
+        "gradient": "linear-gradient(135deg, #10b981, #3b82f6)"
+    },
+    {
+        "id": 3,
+        "name": "Adidas Ultraboost",
+        "brand": "Adidas",
+        "price": 2100000,
+        "grade": "Grade A",
+        "emoji": "\ud83c\udfc3",
+        "gradient": "linear-gradient(135deg, #f59e0b, #ef4444)"
+    },
+    {
+        "id": 4,
+        "name": "Adidas Stan Smith",
+        "brand": "Adidas",
+        "price": 950000,
+        "grade": "Grade B",
+        "emoji": "\ud83d\udc5f",
+        "gradient": "linear-gradient(135deg, #ec4899, #8b5cf6)"
+    },
+    {
+        "id": 5,
+        "name": "New Balance 574",
+        "brand": "NB",
+        "price": 1350000,
+        "grade": "Grade A",
+        "emoji": "\ud83e\udd7e",
+        "gradient": "linear-gradient(135deg, #06b6d4, #3b82f6)"
+    },
+    {
+        "id": 6,
+        "name": "Vans Old Skool",
+        "brand": "Vans",
+        "price": 780000,
+        "grade": "Grade B",
+        "emoji": "\ud83d\udef9",
+        "gradient": "linear-gradient(135deg, #10b981, #059669)"
+    },
+    {
+        "id": 7,
+        "name": "Converse Chuck 70",
+        "brand": "Converse",
+        "price": 890000,
+        "grade": "Grade A",
+        "emoji": "\ud83e\udd7e",
+        "gradient": "linear-gradient(135deg, #ef4444, #f59e0b)"
+    },
+    {
+        "id": 8,
+        "name": "Puma RS-X",
+        "brand": "Puma",
+        "price": 1100000,
+        "grade": "Grade B",
+        "emoji": "\ud83d\udc5f",
+        "gradient": "linear-gradient(135deg, #8b5cf6, #ec4899)"
+    },
+    {
+        "id": 9,
+        "name": "Asics Gel-Kayano 29",
+        "brand": "Asics",
+        "price": 2300000,
+        "grade": "Grade A",
+        "emoji": "\ud83c\udfc3",
+        "gradient": "linear-gradient(135deg, #3b82f6, #06b6d4)"
+    },
+    {
+        "id": 10,
+        "name": "Reebok Club C 85",
+        "brand": "Reebok",
+        "price": 850000,
+        "grade": "Grade B",
+        "emoji": "\ud83d\udc5f",
+        "gradient": "linear-gradient(135deg, #10b981, #8b5cf6)"
+    },
+    {
+        "id": 11,
+        "name": "Nike Air Force 1",
+        "brand": "Nike",
+        "price": 1500000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5f",
+        "gradient": "linear-gradient(135deg, #f59e0b, #ec4899)"
+    },
+    {
+        "id": 12,
+        "name": "Adidas NMD R1",
+        "brand": "Adidas",
+        "price": 1900000,
+        "grade": "Grade A",
+        "emoji": "\ud83c\udfc3",
+        "gradient": "linear-gradient(135deg, #8b5cf6, #3b82f6)"
+    },
+    {
+        "id": 13,
+        "name": "Onitsuka Tiger Mexico 66",
+        "brand": "Onitsuka",
+        "price": 1750000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5f",
+        "gradient": "linear-gradient(135deg, #ef4444, #8b5cf6)"
+    },
+    {
+        "id": 14,
+        "name": "New Balance 990v5",
+        "brand": "NB",
+        "price": 2800000,
+        "grade": "Grade A",
+        "emoji": "\ud83e\udd7e",
+        "gradient": "linear-gradient(135deg, #059669, #3b82f6)"
+    },
+    {
+        "id": 15,
+        "name": "Fila Disruptor II",
+        "brand": "Fila",
+        "price": 900000,
+        "grade": "Grade B",
+        "emoji": "\ud83d\udc5f",
+        "gradient": "linear-gradient(135deg, #ec4899, #f59e0b)"
+    },
+    {
+        "id": 16,
+        "name": "Skechers D'Lites",
+        "brand": "Skechers",
+        "price": 800000,
+        "grade": "Grade B",
+        "emoji": "\ud83c\udfc3",
+        "gradient": "linear-gradient(135deg, #3b82f6, #10b981)"
+    },
+    {
+        "id": 18,
+        "name": "AUTHENTIC BW",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5e",
+        "gradient": "linear-gradient(135deg, #10b981, #3b82f6)"
+    },
+    {
+        "id": 19,
+        "name": "AUTHENTIC RED",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83c\udfc3",
+        "gradient": "linear-gradient(135deg, #f59e0b, #ef4444)"
+    },
+    {
+        "id": 20,
+        "name": "OS BW",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udef9",
+        "gradient": "linear-gradient(135deg, #ec4899, #8b5cf6)"
+    },
+    {
+        "id": 21,
+        "name": "OS VELCRO BW",
+        "brand": "Vans",
+        "price": 335000,
+        "grade": "Grade A",
+        "emoji": "\ud83e\udd7e",
+        "gradient": "linear-gradient(135deg, #06b6d4, #3b82f6)"
+    },
+    {
+        "id": 22,
+        "name": "SK8 LOW BW",
+        "brand": "Vans",
+        "price": 335000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5f",
+        "gradient": "linear-gradient(135deg, #10b981, #059669)"
+    },
+    {
+        "id": 23,
+        "name": "SLING BAG CHK BLACK",
+        "brand": "Unknown",
+        "price": 100000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5e",
+        "gradient": "linear-gradient(135deg, #ef4444, #f59e0b)"
+    },
+    {
+        "id": 24,
+        "name": "AUTHENTIC NAVY",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83c\udfc3",
+        "gradient": "linear-gradient(135deg, #8b5cf6, #ec4899)"
+    },
+    {
+        "id": 25,
+        "name": "KNU SKOOL BROWN PINK",
+        "brand": "HOLD",
+        "price": 500000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udef9",
+        "gradient": "linear-gradient(135deg, #3b82f6, #8b5cf6)"
+    },
+    {
+        "id": 26,
+        "name": "KNU SKOOL BW",
+        "brand": "HOLD",
+        "price": 400000,
+        "grade": "Grade A",
+        "emoji": "\ud83e\udd7e",
+        "gradient": "linear-gradient(135deg, #10b981, #3b82f6)"
+    },
+    {
+        "id": 27,
+        "name": "OS BW",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5f",
+        "gradient": "linear-gradient(135deg, #f59e0b, #ef4444)"
+    },
+    {
+        "id": 28,
+        "name": "OS BW",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5e",
+        "gradient": "linear-gradient(135deg, #ec4899, #8b5cf6)"
+    },
+    {
+        "id": 29,
+        "name": "AUTHENTIC NAVY",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83c\udfc3",
+        "gradient": "linear-gradient(135deg, #06b6d4, #3b82f6)"
+    },
+    {
+        "id": 30,
+        "name": "AUTHENTIC NAVY",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udef9",
+        "gradient": "linear-gradient(135deg, #10b981, #059669)"
+    },
+    {
+        "id": 31,
+        "name": "AUTHENTIC RED",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83e\udd7e",
+        "gradient": "linear-gradient(135deg, #ef4444, #f59e0b)"
+    },
+    {
+        "id": 32,
+        "name": "BACKPACK VANS VFONT",
+        "brand": "Vans",
+        "price": 150000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5f",
+        "gradient": "linear-gradient(135deg, #8b5cf6, #ec4899)"
+    },
+    {
+        "id": 33,
+        "name": "OS BW",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5e",
+        "gradient": "linear-gradient(135deg, #3b82f6, #8b5cf6)"
+    },
+    {
+        "id": 34,
+        "name": "SK8 HIGH BW",
+        "brand": "Vans",
+        "price": 350000,
+        "grade": "Grade A",
+        "emoji": "\ud83c\udfc3",
+        "gradient": "linear-gradient(135deg, #10b981, #3b82f6)"
+    },
+    {
+        "id": 35,
+        "name": "SK8 HIGH FULL BLACK",
+        "brand": "Vans",
+        "price": 350000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udef9",
+        "gradient": "linear-gradient(135deg, #f59e0b, #ef4444)"
+    },
+    {
+        "id": 36,
+        "name": "SK8 HIGH FULL BLACK",
+        "brand": "Vans",
+        "price": 350000,
+        "grade": "Grade A",
+        "emoji": "\ud83e\udd7e",
+        "gradient": "linear-gradient(135deg, #ec4899, #8b5cf6)"
+    },
+    {
+        "id": 37,
+        "name": "SK8 LOW BW",
+        "brand": "Vans",
+        "price": 335000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5f",
+        "gradient": "linear-gradient(135deg, #06b6d4, #3b82f6)"
+    },
+    {
+        "id": 38,
+        "name": "AUTHENTIC RED",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5e",
+        "gradient": "linear-gradient(135deg, #10b981, #059669)"
+    },
+    {
+        "id": 39,
+        "name": "AUTHENTIC BW",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83c\udfc3",
+        "gradient": "linear-gradient(135deg, #ef4444, #f59e0b)"
+    },
+    {
+        "id": 40,
+        "name": "AUTHENTIC NAVY",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udef9",
+        "gradient": "linear-gradient(135deg, #8b5cf6, #ec4899)"
+    },
+    {
+        "id": 41,
+        "name": "AUTHENTIC RED",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83e\udd7e",
+        "gradient": "linear-gradient(135deg, #3b82f6, #8b5cf6)"
+    },
+    {
+        "id": 42,
+        "name": "SLIP ON BW",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5f",
+        "gradient": "linear-gradient(135deg, #10b981, #3b82f6)"
+    },
+    {
+        "id": 43,
+        "name": "KNU SKOOL BW",
+        "brand": "GOSEL $",
+        "price": 400000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5e",
+        "gradient": "linear-gradient(135deg, #f59e0b, #ef4444)"
+    },
+    {
+        "id": 44,
+        "name": "AUTHENTIC BW",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83c\udfc3",
+        "gradient": "linear-gradient(135deg, #ec4899, #8b5cf6)"
+    },
+    {
+        "id": 45,
+        "name": "AUTHENTIC BW",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udef9",
+        "gradient": "linear-gradient(135deg, #06b6d4, #3b82f6)"
+    },
+    {
+        "id": 46,
+        "name": "SK8 HIGH FULLBLACK",
+        "brand": "Vans",
+        "price": 350000,
+        "grade": "Grade A",
+        "emoji": "\ud83e\udd7e",
+        "gradient": "linear-gradient(135deg, #10b981, #059669)"
+    },
+    {
+        "id": 47,
+        "name": "SK8 LOW BW",
+        "brand": "Vans",
+        "price": 335000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5f",
+        "gradient": "linear-gradient(135deg, #ef4444, #f59e0b)"
+    },
+    {
+        "id": 48,
+        "name": "AUTHENTIC BW",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5e",
+        "gradient": "linear-gradient(135deg, #8b5cf6, #ec4899)"
+    },
+    {
+        "id": 49,
+        "name": "AUTHENTIC BW",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83c\udfc3",
+        "gradient": "linear-gradient(135deg, #3b82f6, #8b5cf6)"
+    },
+    {
+        "id": 50,
+        "name": "AUTHENTIC PURPLE",
+        "brand": "Vans",
+        "price": 350000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udef9",
+        "gradient": "linear-gradient(135deg, #10b981, #3b82f6)"
+    },
+    {
+        "id": 51,
+        "name": "AUTHENTIC RED",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83e\udd7e",
+        "gradient": "linear-gradient(135deg, #f59e0b, #ef4444)"
+    },
+    {
+        "id": 52,
+        "name": "SK8 HIGH FULL BLACK",
+        "brand": "Vans",
+        "price": 350000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5f",
+        "gradient": "linear-gradient(135deg, #ec4899, #8b5cf6)"
+    },
+    {
+        "id": 53,
+        "name": "SK8 LOW BW",
+        "brand": "Vans",
+        "price": 335000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5e",
+        "gradient": "linear-gradient(135deg, #06b6d4, #3b82f6)"
+    },
+    {
+        "id": 54,
+        "name": "AUTHENTIC NAVY",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83c\udfc3",
+        "gradient": "linear-gradient(135deg, #10b981, #059669)"
+    },
+    {
+        "id": 55,
+        "name": "OS BW",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udef9",
+        "gradient": "linear-gradient(135deg, #ef4444, #f59e0b)"
+    },
+    {
+        "id": 56,
+        "name": "SK8 LOW BW",
+        "brand": "Vans",
+        "price": 335000,
+        "grade": "Grade A",
+        "emoji": "\ud83e\udd7e",
+        "gradient": "linear-gradient(135deg, #8b5cf6, #ec4899)"
+    },
+    {
+        "id": 57,
+        "name": "AUTHENTIC NAVY",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5f",
+        "gradient": "linear-gradient(135deg, #3b82f6, #8b5cf6)"
+    },
+    {
+        "id": 58,
+        "name": "OS FULL BLACK",
+        "brand": "Vans",
+        "price": 330000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5e",
+        "gradient": "linear-gradient(135deg, #10b981, #3b82f6)"
+    },
+    {
+        "id": 59,
+        "name": "SK8 HIGH BW",
+        "brand": "Vans",
+        "price": 350000,
+        "grade": "Grade A",
+        "emoji": "\ud83c\udfc3",
+        "gradient": "linear-gradient(135deg, #f59e0b, #ef4444)"
+    },
+    {
+        "id": 60,
+        "name": "AUTHENTIC NAVY",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udef9",
+        "gradient": "linear-gradient(135deg, #ec4899, #8b5cf6)"
+    },
+    {
+        "id": 61,
+        "name": "AUTHENTIC PURPLE",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83e\udd7e",
+        "gradient": "linear-gradient(135deg, #06b6d4, #3b82f6)"
+    },
+    {
+        "id": 62,
+        "name": "OS BW",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5f",
+        "gradient": "linear-gradient(135deg, #10b981, #059669)"
+    },
+    {
+        "id": 63,
+        "name": "SK8 LOW BW",
+        "brand": "Vans",
+        "price": 335000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5e",
+        "gradient": "linear-gradient(135deg, #ef4444, #f59e0b)"
+    },
+    {
+        "id": 64,
+        "name": "SK8 LOW BW",
+        "brand": "Vans",
+        "price": 380000,
+        "grade": "Grade A",
+        "emoji": "\ud83c\udfc3",
+        "gradient": "linear-gradient(135deg, #8b5cf6, #ec4899)"
+    },
+    {
+        "id": 65,
+        "name": "SK8 LOW CONTRAST",
+        "brand": "Vans",
+        "price": 335000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udef9",
+        "gradient": "linear-gradient(135deg, #3b82f6, #8b5cf6)"
+    },
+    {
+        "id": 66,
+        "name": "SK8 LOW FULL BLACK",
+        "brand": "Vans",
+        "price": 335000,
+        "grade": "Grade A",
+        "emoji": "\ud83e\udd7e",
+        "gradient": "linear-gradient(135deg, #10b981, #3b82f6)"
+    },
+    {
+        "id": 67,
+        "name": "SLIP ON BW",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5f",
+        "gradient": "linear-gradient(135deg, #f59e0b, #ef4444)"
+    },
+    {
+        "id": 68,
+        "name": "SLIP ON PEWTER",
+        "brand": "Vans",
+        "price": 335000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5e",
+        "gradient": "linear-gradient(135deg, #ec4899, #8b5cf6)"
+    },
+    {
+        "id": 69,
+        "name": "OS BW",
+        "brand": "Vans",
+        "price": 335000,
+        "grade": "Grade A",
+        "emoji": "\ud83c\udfc3",
+        "gradient": "linear-gradient(135deg, #06b6d4, #3b82f6)"
+    },
+    {
+        "id": 70,
+        "name": "AUTHENTIC BW",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udef9",
+        "gradient": "linear-gradient(135deg, #10b981, #059669)"
+    },
+    {
+        "id": 71,
+        "name": "AUTHENTIC BW",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83e\udd7e",
+        "gradient": "linear-gradient(135deg, #ef4444, #f59e0b)"
+    },
+    {
+        "id": 72,
+        "name": "AUTHENTIC NAVY",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5f",
+        "gradient": "linear-gradient(135deg, #8b5cf6, #ec4899)"
+    },
+    {
+        "id": 73,
+        "name": "AUTHENTIC RED",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5e",
+        "gradient": "linear-gradient(135deg, #3b82f6, #8b5cf6)"
+    },
+    {
+        "id": 74,
+        "name": "OS BW",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83c\udfc3",
+        "gradient": "linear-gradient(135deg, #10b981, #3b82f6)"
+    },
+    {
+        "id": 75,
+        "name": "SK8 HIGH NAVY",
+        "brand": "Vans",
+        "price": 350000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udef9",
+        "gradient": "linear-gradient(135deg, #f59e0b, #ef4444)"
+    },
+    {
+        "id": 76,
+        "name": "SLIP ON BW",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83e\udd7e",
+        "gradient": "linear-gradient(135deg, #ec4899, #8b5cf6)"
+    },
+    {
+        "id": 77,
+        "name": "AUTHENTIC PURPLE",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5f",
+        "gradient": "linear-gradient(135deg, #06b6d4, #3b82f6)"
+    },
+    {
+        "id": 78,
+        "name": "AUTHENTIC BW",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5e",
+        "gradient": "linear-gradient(135deg, #10b981, #059669)"
+    },
+    {
+        "id": 79,
+        "name": "AUTHENTIC BW",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83c\udfc3",
+        "gradient": "linear-gradient(135deg, #ef4444, #f59e0b)"
+    },
+    {
+        "id": 80,
+        "name": "AUTHENTIC BW",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udef9",
+        "gradient": "linear-gradient(135deg, #8b5cf6, #ec4899)"
+    },
+    {
+        "id": 81,
+        "name": "AUTHENTIC FULL BLACK",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83e\udd7e",
+        "gradient": "linear-gradient(135deg, #3b82f6, #8b5cf6)"
+    },
+    {
+        "id": 82,
+        "name": "AUTHENTIC NAVY",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5f",
+        "gradient": "linear-gradient(135deg, #10b981, #3b82f6)"
+    },
+    {
+        "id": 83,
+        "name": "AUTHENTIC RED",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5e",
+        "gradient": "linear-gradient(135deg, #f59e0b, #ef4444)"
+    },
+    {
+        "id": 84,
+        "name": "AUTHENTIC RED",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83c\udfc3",
+        "gradient": "linear-gradient(135deg, #ec4899, #8b5cf6)"
+    },
+    {
+        "id": 85,
+        "name": "SK8 HIGH BW",
+        "brand": "Vans",
+        "price": 350000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udef9",
+        "gradient": "linear-gradient(135deg, #06b6d4, #3b82f6)"
+    },
+    {
+        "id": 86,
+        "name": "AUTHENTIC FULL BLACK",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83e\udd7e",
+        "gradient": "linear-gradient(135deg, #10b981, #059669)"
+    },
+    {
+        "id": 89,
+        "name": "SLING BAG CHK BLACK",
+        "brand": "HANIF HARDIWINATA",
+        "price": 100000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udef9",
+        "gradient": "linear-gradient(135deg, #10b981, #3b82f6)"
+    },
+    {
+        "id": 90,
+        "name": "AUTHENTIC BW",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83e\udd7e",
+        "gradient": "linear-gradient(135deg, #f59e0b, #ef4444)"
+    },
+    {
+        "id": 91,
+        "name": "AUTHENTIC RED",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5f",
+        "gradient": "linear-gradient(135deg, #ec4899, #8b5cf6)"
+    },
+    {
+        "id": 92,
+        "name": "OS VELCRO BW",
+        "brand": "Vans",
+        "price": 335000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5e",
+        "gradient": "linear-gradient(135deg, #06b6d4, #3b82f6)"
+    },
+    {
+        "id": 93,
+        "name": "SK8 LOW BW",
+        "brand": "Vans",
+        "price": 335000,
+        "grade": "Grade A",
+        "emoji": "\ud83c\udfc3",
+        "gradient": "linear-gradient(135deg, #10b981, #059669)"
+    },
+    {
+        "id": 94,
+        "name": "OS BW",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udef9",
+        "gradient": "linear-gradient(135deg, #ef4444, #f59e0b)"
+    },
+    {
+        "id": 95,
+        "name": "AUTHENTIC NAVY",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83e\udd7e",
+        "gradient": "linear-gradient(135deg, #8b5cf6, #ec4899)"
+    },
+    {
+        "id": 96,
+        "name": "KNU SKOOL BROWN PINK",
+        "brand": "HOLD",
+        "price": 500000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5f",
+        "gradient": "linear-gradient(135deg, #3b82f6, #8b5cf6)"
+    },
+    {
+        "id": 97,
+        "name": "KNU SKOOL BW",
+        "brand": "HOLD",
+        "price": 400000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5e",
+        "gradient": "linear-gradient(135deg, #10b981, #3b82f6)"
+    },
+    {
+        "id": 98,
+        "name": "OS BW",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83c\udfc3",
+        "gradient": "linear-gradient(135deg, #f59e0b, #ef4444)"
+    },
+    {
+        "id": 99,
+        "name": "OS BW",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udef9",
+        "gradient": "linear-gradient(135deg, #ec4899, #8b5cf6)"
+    },
+    {
+        "id": 100,
+        "name": "AUTHENTIC NAVY",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83e\udd7e",
+        "gradient": "linear-gradient(135deg, #06b6d4, #3b82f6)"
+    },
+    {
+        "id": 101,
+        "name": "SK8 HIGH FULL BLACK",
+        "brand": "Vans",
+        "price": 350000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5f",
+        "gradient": "linear-gradient(135deg, #10b981, #059669)"
+    },
+    {
+        "id": 102,
+        "name": "AUTHENTIC NAVY",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5e",
+        "gradient": "linear-gradient(135deg, #ef4444, #f59e0b)"
+    },
+    {
+        "id": 103,
+        "name": "BACKPACK VANS VFONT",
+        "brand": "Vans",
+        "price": 150000,
+        "grade": "Grade A",
+        "emoji": "\ud83c\udfc3",
+        "gradient": "linear-gradient(135deg, #8b5cf6, #ec4899)"
+    },
+    {
+        "id": 104,
+        "name": "SK8 LOW BW",
+        "brand": "Vans",
+        "price": 335000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udef9",
+        "gradient": "linear-gradient(135deg, #3b82f6, #8b5cf6)"
+    },
+    {
+        "id": 105,
+        "name": "SK8 HIGH FULL BLACK",
+        "brand": "Vans",
+        "price": 350000,
+        "grade": "Grade A",
+        "emoji": "\ud83e\udd7e",
+        "gradient": "linear-gradient(135deg, #10b981, #3b82f6)"
+    },
+    {
+        "id": 106,
+        "name": "SK8 HIGH BW",
+        "brand": "Vans",
+        "price": 350000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5f",
+        "gradient": "linear-gradient(135deg, #f59e0b, #ef4444)"
+    },
+    {
+        "id": 107,
+        "name": "OS BW",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5e",
+        "gradient": "linear-gradient(135deg, #ec4899, #8b5cf6)"
+    },
+    {
+        "id": 108,
+        "name": "AUTHENTIC RED",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83c\udfc3",
+        "gradient": "linear-gradient(135deg, #06b6d4, #3b82f6)"
+    },
+    {
+        "id": 109,
+        "name": "AUTHENTIC RED",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udef9",
+        "gradient": "linear-gradient(135deg, #10b981, #059669)"
+    },
+    {
+        "id": 110,
+        "name": "AUTHENTIC BW",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83e\udd7e",
+        "gradient": "linear-gradient(135deg, #ef4444, #f59e0b)"
+    },
+    {
+        "id": 111,
+        "name": "AUTHENTIC NAVY",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5f",
+        "gradient": "linear-gradient(135deg, #8b5cf6, #ec4899)"
+    },
+    {
+        "id": 112,
+        "name": "AUTHENTIC RED",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5e",
+        "gradient": "linear-gradient(135deg, #3b82f6, #8b5cf6)"
+    },
+    {
+        "id": 113,
+        "name": "SLIP ON BW",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83c\udfc3",
+        "gradient": "linear-gradient(135deg, #10b981, #3b82f6)"
+    },
+    {
+        "id": 114,
+        "name": "KNU SKOOL BW",
+        "brand": "GOSEL $",
+        "price": 400000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udef9",
+        "gradient": "linear-gradient(135deg, #f59e0b, #ef4444)"
+    },
+    {
+        "id": 115,
+        "name": "AUTHENTIC BW",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83e\udd7e",
+        "gradient": "linear-gradient(135deg, #ec4899, #8b5cf6)"
+    },
+    {
+        "id": 116,
+        "name": "AUTHENTIC BW",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5f",
+        "gradient": "linear-gradient(135deg, #06b6d4, #3b82f6)"
+    },
+    {
+        "id": 117,
+        "name": "SK8 LOW BW",
+        "brand": "Vans",
+        "price": 335000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5e",
+        "gradient": "linear-gradient(135deg, #10b981, #059669)"
+    },
+    {
+        "id": 118,
+        "name": "SK8 HIGH FULLBLACK",
+        "brand": "Vans",
+        "price": 350000,
+        "grade": "Grade A",
+        "emoji": "\ud83c\udfc3",
+        "gradient": "linear-gradient(135deg, #ef4444, #f59e0b)"
+    },
+    {
+        "id": 119,
+        "name": "AUTHENTIC BW",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udef9",
+        "gradient": "linear-gradient(135deg, #8b5cf6, #ec4899)"
+    },
+    {
+        "id": 120,
+        "name": "AUTHENTIC RED",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83e\udd7e",
+        "gradient": "linear-gradient(135deg, #3b82f6, #8b5cf6)"
+    },
+    {
+        "id": 121,
+        "name": "SK8 LOW BW",
+        "brand": "Vans",
+        "price": 335000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5f",
+        "gradient": "linear-gradient(135deg, #10b981, #3b82f6)"
+    },
+    {
+        "id": 122,
+        "name": "AUTHENTIC BW",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5e",
+        "gradient": "linear-gradient(135deg, #f59e0b, #ef4444)"
+    },
+    {
+        "id": 123,
+        "name": "SK8 HIGH FULL BLACK",
+        "brand": "Vans",
+        "price": 350000,
+        "grade": "Grade A",
+        "emoji": "\ud83c\udfc3",
+        "gradient": "linear-gradient(135deg, #ec4899, #8b5cf6)"
+    },
+    {
+        "id": 124,
+        "name": "AUTHENTIC PURPLE",
+        "brand": "Vans",
+        "price": 350000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udef9",
+        "gradient": "linear-gradient(135deg, #06b6d4, #3b82f6)"
+    },
+    {
+        "id": 125,
+        "name": "SK8 LOW BW",
+        "brand": "Vans",
+        "price": 335000,
+        "grade": "Grade A",
+        "emoji": "\ud83e\udd7e",
+        "gradient": "linear-gradient(135deg, #10b981, #059669)"
+    },
+    {
+        "id": 126,
+        "name": "AUTHENTIC NAVY",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5f",
+        "gradient": "linear-gradient(135deg, #ef4444, #f59e0b)"
+    },
+    {
+        "id": 127,
+        "name": "OS BW",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5e",
+        "gradient": "linear-gradient(135deg, #8b5cf6, #ec4899)"
+    },
+    {
+        "id": 128,
+        "name": "AUTHENTIC NAVY",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83c\udfc3",
+        "gradient": "linear-gradient(135deg, #3b82f6, #8b5cf6)"
+    },
+    {
+        "id": 129,
+        "name": "SK8 HIGH BW",
+        "brand": "Vans",
+        "price": 350000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udef9",
+        "gradient": "linear-gradient(135deg, #10b981, #3b82f6)"
+    },
+    {
+        "id": 130,
+        "name": "OS FULL BLACK",
+        "brand": "Vans",
+        "price": 330000,
+        "grade": "Grade A",
+        "emoji": "\ud83e\udd7e",
+        "gradient": "linear-gradient(135deg, #f59e0b, #ef4444)"
+    },
+    {
+        "id": 131,
+        "name": "SLIP ON PEWTER",
+        "brand": "Vans",
+        "price": 335000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5f",
+        "gradient": "linear-gradient(135deg, #ec4899, #8b5cf6)"
+    },
+    {
+        "id": 132,
+        "name": "SLIP ON BW",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5e",
+        "gradient": "linear-gradient(135deg, #06b6d4, #3b82f6)"
+    },
+    {
+        "id": 133,
+        "name": "AUTHENTIC PURPLE",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83c\udfc3",
+        "gradient": "linear-gradient(135deg, #10b981, #059669)"
+    },
+    {
+        "id": 134,
+        "name": "SK8 LOW BW",
+        "brand": "Vans",
+        "price": 380000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udef9",
+        "gradient": "linear-gradient(135deg, #ef4444, #f59e0b)"
+    },
+    {
+        "id": 135,
+        "name": "OS BW",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83e\udd7e",
+        "gradient": "linear-gradient(135deg, #8b5cf6, #ec4899)"
+    },
+    {
+        "id": 136,
+        "name": "SK8 LOW BW",
+        "brand": "Vans",
+        "price": 335000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5f",
+        "gradient": "linear-gradient(135deg, #3b82f6, #8b5cf6)"
+    },
+    {
+        "id": 137,
+        "name": "SK8 LOW CONTRAST",
+        "brand": "Vans",
+        "price": 335000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5e",
+        "gradient": "linear-gradient(135deg, #10b981, #3b82f6)"
+    },
+    {
+        "id": 138,
+        "name": "AUTHENTIC NAVY",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83c\udfc3",
+        "gradient": "linear-gradient(135deg, #f59e0b, #ef4444)"
+    },
+    {
+        "id": 139,
+        "name": "SK8 LOW FULL BLACK",
+        "brand": "Vans",
+        "price": 335000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udef9",
+        "gradient": "linear-gradient(135deg, #ec4899, #8b5cf6)"
+    },
+    {
+        "id": 140,
+        "name": "OS BW",
+        "brand": "Vans",
+        "price": 335000,
+        "grade": "Grade A",
+        "emoji": "\ud83e\udd7e",
+        "gradient": "linear-gradient(135deg, #06b6d4, #3b82f6)"
+    },
+    {
+        "id": 141,
+        "name": "AUTHENTIC RED",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5f",
+        "gradient": "linear-gradient(135deg, #10b981, #059669)"
+    },
+    {
+        "id": 142,
+        "name": "AUTHENTIC BW",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5e",
+        "gradient": "linear-gradient(135deg, #ef4444, #f59e0b)"
+    },
+    {
+        "id": 143,
+        "name": "AUTHENTIC NAVY",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83c\udfc3",
+        "gradient": "linear-gradient(135deg, #8b5cf6, #ec4899)"
+    },
+    {
+        "id": 144,
+        "name": "SK8 HIGH NAVY",
+        "brand": "Vans",
+        "price": 350000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udef9",
+        "gradient": "linear-gradient(135deg, #3b82f6, #8b5cf6)"
+    },
+    {
+        "id": 145,
+        "name": "SLIP ON BW",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83e\udd7e",
+        "gradient": "linear-gradient(135deg, #10b981, #3b82f6)"
+    },
+    {
+        "id": 146,
+        "name": "AUTHENTIC BW",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5f",
+        "gradient": "linear-gradient(135deg, #f59e0b, #ef4444)"
+    },
+    {
+        "id": 147,
+        "name": "OS BW",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5e",
+        "gradient": "linear-gradient(135deg, #ec4899, #8b5cf6)"
+    },
+    {
+        "id": 148,
+        "name": "AUTHENTIC PURPLE",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83c\udfc3",
+        "gradient": "linear-gradient(135deg, #06b6d4, #3b82f6)"
+    },
+    {
+        "id": 149,
+        "name": "AUTHENTIC RED",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udef9",
+        "gradient": "linear-gradient(135deg, #10b981, #059669)"
+    },
+    {
+        "id": 150,
+        "name": "AUTHENTIC BW",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83e\udd7e",
+        "gradient": "linear-gradient(135deg, #ef4444, #f59e0b)"
+    },
+    {
+        "id": 151,
+        "name": "AUTHENTIC BW",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5f",
+        "gradient": "linear-gradient(135deg, #8b5cf6, #ec4899)"
+    },
+    {
+        "id": 152,
+        "name": "AUTHENTIC BW",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5e",
+        "gradient": "linear-gradient(135deg, #3b82f6, #8b5cf6)"
+    },
+    {
+        "id": 153,
+        "name": "AUTHENTIC RED",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83c\udfc3",
+        "gradient": "linear-gradient(135deg, #10b981, #3b82f6)"
+    },
+    {
+        "id": 154,
+        "name": "SK8 HIGH BW",
+        "brand": "Vans",
+        "price": 350000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udef9",
+        "gradient": "linear-gradient(135deg, #f59e0b, #ef4444)"
+    },
+    {
+        "id": 155,
+        "name": "AUTHENTIC NAVY",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83e\udd7e",
+        "gradient": "linear-gradient(135deg, #ec4899, #8b5cf6)"
+    },
+    {
+        "id": 156,
+        "name": "AUTHENTIC FULL BLACK",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5f",
+        "gradient": "linear-gradient(135deg, #06b6d4, #3b82f6)"
+    },
+    {
+        "id": 157,
+        "name": "AUTHENTIC FULL BLACK",
+        "brand": "Vans",
+        "price": 325000,
+        "grade": "Grade A",
+        "emoji": "\ud83d\udc5e",
+        "gradient": "linear-gradient(135deg, #10b981, #059669)"
+    }
+]

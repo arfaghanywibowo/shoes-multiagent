@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Multi-Agent AI</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Google Identity Services -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body class="dark-mode">
+    <div class="app-container">
+        <!-- LEFT SIDEBAR -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo-container">
+                    <div class="logo-icon">
+                        <i class="fa-solid fa-shoe-prints"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h2>Shoe Multi-Agent <span>AI</span></h2>
+                        <p>AI Assistant untuk Konsultasi Sepatu</p>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="sidebar-menu">
+                <button class="menu-item active" data-page="chat-page">
+                    <i class="fa-regular fa-clock"></i>
+                    <span>Histori</span>
+                </button>
+                <button class="menu-item" data-page="new-chat-page">
+                    <i class="fa-regular fa-comments"></i>
+                    <span>Obrolan baru</span>
+                </button>
+                <button class="menu-item" data-page="products-page">
+                    <i class="fa-solid fa-tags"></i>
+                    <span>Produk</span>
+                </button>
+                <button class="menu-item" data-page="agents-page">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>Agent Info</span>
+                </button>
+                <button class="menu-item" data-page="settings-page">
+                    <i class="fa-solid fa-sliders"></i>
+                    <span>Pengaturan</span>
+                </button>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="status-indicator">
+                    <span class="status-dot"></span>
+                    <span class="status-text">Sistem <strong>Online</strong></span>
+                </div>
+                <div class="theme-toggle-container">
+                    <div class="toggle-label">
+                        <i class="fa-regular fa-moon"></i>
+                        <span>Mode gelap</span>
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox" id="dark-mode-toggle" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+        </aside>
+
+        <!-- MAIN CONTENT AREA -->
+        <main class="main-content">
+            <!-- TOP HEADER -->
+            <header class="top-header">
+                <div class="page-title-display">
+                    <h3 id="current-page-title">Histori Obrolan</h3>
+                </div>
+                <div class="header-actions">
+                    <!-- Google Sign-In Button Container -->
+                    <div id="g_id_onload"
+                         data-client_id="1053612601609-9qvkmcnqn80l7unshd6cu2cqs5499hvv.apps.googleusercontent.com"
+                         data-callback="handleCredentialResponse"
+                         data-auto_prompt="false">
+                    </div>
+                    <div class="g_id_signin"
+                         data-type="standard"
+                         data-size="medium"
+                         data-theme="filled_black"
+                         data-text="sign_in_with"
+                         data-shape="pill"
+                         data-logo_alignment="left"
+                         id="google-login-btn">
+                    </div>
+                    
+                    <div class="user-profile" id="user-profile-display" style="display: none;">
+                        <img src="https://api.dicebear.com/7.x/adventurer/svg?seed=Felix" alt="User Avatar" class="avatar" id="user-avatar-img">
+                        <span class="user-name" id="user-name-text">Guest User</span>
+                        <button class="btn-logout" id="logout-btn" title="Keluar"><i class="fa-solid fa-right-from-bracket"></i></button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- PAGE CONTENT CONTAINER -->
+            <div class="page-container">
+                
+                <!-- 1. CHAT PAGE (HISTORI) -->
+                <section id="chat-page" class="page-section active">
+                    <div class="chat-wrapper">
+                        <!-- Chat history sidebar (optional, but let's make it inline or switch sessions) -->
+                        <div class="chat-sessions-list" id="chat-sessions-list">
+                            <!-- Populated dynamically -->
+                        </div>
+                        
+                        <div class="chat-area">
+                            <div class="chat-messages" id="chat-messages-container">
+                                <!-- Messages will be populated dynamically -->
+                            </div>
+                            
+                            <!-- Chat Input -->
+                            <div class="chat-input-container">
+                                <form id="chat-form" class="chat-input-form">
+                                    <button type="button" class="btn-attachment" id="btn-attachment" title="Unggah berkas / gambar (Simulasi)">
+                                        <i class="fa-solid fa-paperclip"></i>
+                                    </button>
+                                    <input type="text" id="chat-input-field" placeholder="Ketik pesan..." autocomplete="off" required>
+                                    <button type="submit" class="btn-send" id="btn-send-message">
+                                        <i class="fa-solid fa-paper-plane"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 2. NEW CHAT PAGE (OBROLAN BARU) -->
+                <section id="new-chat-page" class="page-section">
+                    <div class="new-chat-container">
+                        <div class="new-chat-hero">
+                            <div class="new-chat-icon">
+                                <i class="fa-regular fa-comment-dots"></i>
+                            </div>
+                            <h2>Mulai Obrolan Baru</h2>
+                            <p>Tanyakan apa saja tentang sepatu kepada AI kami</p>
+                        </div>
+                        <div class="suggestion-chips">
+                            <button class="chip-btn" data-prompt="Apa perbedaan Grade A dan Grade B pada Nike Air Jordan?">
+                                Perbedaan Grade A & B
+                            </button>
+                            <button class="chip-btn" data-prompt="Bagaimana cara memilih ukuran sepatu Nike jika panjang kaki saya 26 cm?">
+                                Cara memilih ukuran
+                            </button>
+                            <button class="chip-btn" data-prompt="Beri saya rekomendasi outfit yang cocok untuk sepatu Adidas Stan Smith.">
+                                Rekomendasi style
+                            </button>
+                            <button class="chip-btn" data-prompt="Apakah sepatu Vans Old Skool ready stock di katalog?">
+                                Cek stok produk
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 3. PRODUCTS PAGE (PRODUK) -->
+                <section id="products-page" class="page-section">
+                    <div class="products-header">
+                        <h2>Katalog Produk</h2>
+                        <div class="products-actions">
+                            <button class="btn-primary" id="btn-add-product-dialog" style="display:none;">
+                                <i class="fa-solid fa-plus"></i> Tambah Produk
+                            </button>
+                        </div>
+                    </div>
+                    <div class="products-grid" id="products-grid-container">
+                        <!-- Populated dynamically -->
+                    </div>
+                </section>
+
+                <!-- 4. AGENTS PAGE (AGENT INFO) -->
+                <section id="agents-page" class="page-section">
+                    <div class="agents-header">
+                        <h2>Informasi Agent</h2>
+                    </div>
+                    <div class="agents-list" id="agents-list-container">
+                        <!-- Populated dynamically -->
+                    </div>
+                </section>
+
+                <!-- 5. SETTINGS PAGE (PENGATURAN) -->
+                <section id="settings-page" class="page-section">
+                    <div class="settings-header">
+                        <h2>Pengaturan</h2>
+                    </div>
+                    
+                    <div class="settings-list">
+                        <!-- Setting Card: Theme -->
+                        <div class="settings-card">
+                            <div class="setting-info">
+                                <h4>Mode Gelap</h4>
+                                <p>Aktifkan tampilan mode gelap</p>
+                            </div>
+                            <div class="setting-action">
+                                <label class="switch">
+                                    <input type="checkbox" id="settings-dark-mode" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Setting Card: Notifications -->
+                        <div class="settings-card">
+                            <div class="setting-info">
+                                <h4>Notifikasi</h4>
+                                <p>Terima notifikasi stok dan promo</p>
+                            </div>
+                            <div class="setting-action">
+                                <label class="switch">
+                                    <input type="checkbox" id="settings-notifications">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Setting Card: Chat Voice -->
+                        <div class="settings-card">
+                            <div class="setting-info">
+                                <h4>Suara Chat</h4>
+                                <p>Aktifkan suara saat menerima pesan (Text to Speech)</p>
+                            </div>
+                            <div class="setting-action">
+                                <label class="switch">
+                                    <input type="checkbox" id="settings-chat-voice" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Setting Card: Language -->
+                        <div class="settings-card">
+                            <div class="setting-info">
+                                <h4>Bahasa</h4>
+                                <p>Pilih bahasa antarmuka</p>
+                            </div>
+                            <div class="setting-action">
+                                <select id="settings-language" class="select-dropdown">
+                                    <option value="Indonesia" selected>Indonesia</option>
+                                    <option value="English">English</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Setting Card: Gemini API Key -->
+                        <div class="settings-card">
+                            <div class="setting-info">
+                                <h4>Gemini API Key</h4>
+                                <p>Kunci API untuk menghubungkan AI dengan Google Studio</p>
+                            </div>
+                            <div class="setting-action">
+                                <input type="password" id="settings-gemini-key" class="select-dropdown" style="width: 250px; text-align: left; font-family: monospace;" placeholder="Masukkan API Key...">
+                            </div>
+                        </div>
+
+                        <!-- Setting Card: Delete Chat History -->
+                        <div class="settings-card">
+                            <div class="setting-info">
+                                <h4>Hapus Riwayat Chat</h4>
+                                <p>Hapus semua percakapan yang tersimpan</p>
+                            </div>
+                            <div class="setting-action">
+                                <button class="btn-danger" id="btn-clear-chats">Hapus</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- IMPORT DATA SECTION -->
+                    <div class="import-section-title">
+                        <h3>IMPORT DATA</h3>
+                    </div>
+
+                    <div class="import-card">
+                        <div class="import-header">
+                            <div class="import-icon">
+                                <i class="fa-regular fa-file-excel"></i>
+                            </div>
+                            <div class="import-info">
+                                <h4>Import Data Produk via Excel</h4>
+                                <p>Upload file <strong>.xlsx</strong> untuk memperbarui katalog produk dan pengetahuan AI</p>
+                            </div>
+                            <div class="import-actions-top">
+                                <a href="#" id="download-template-link" class="btn-link">
+                                    <i class="fa-solid fa-download"></i> Unduh Templat Excel (.xlsx)
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Drag and Drop Area -->
+                        <div class="drag-drop-area" id="excel-drag-drop-zone">
+                            <input type="file" id="excel-file-input" accept=".xlsx" style="display: none;">
+                            <div class="drag-drop-content">
+                                <i class="fa-solid fa-circle-arrow-up drag-icon"></i>
+                                <p class="drag-text">Seret & taruh file Excel di sini atau <span>Pilih File</span></p>
+                                <p class="file-limits">Format yang didukung: .xlsx saja (Maksimal 5MB)</p>
+                            </div>
+                            <!-- Success/Error alert inside zone -->
+                            <div class="upload-feedback" id="upload-feedback-display" style="display: none;">
+                                <i class="fa-solid fa-spinner fa-spin feedback-spinner"></i>
+                                <span class="feedback-text">Mengunggah dan memproses file...</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- NOTIFICATION POPUP -->
+    <div id="toast-notification" class="toast" style="display: none;">
+        <div class="toast-content">
+            <i class="fa-solid fa-circle-info toast-icon"></i>
+            <span class="toast-message">Notifikasi</span>
+        </div>
+    </div>
+
+    <!-- SheetJS Library for client-side Excel parsing -->
+    <script src="xlsx.full.min.js"></script>
+    <!-- Application Logic -->
+    <script src="app.js"></script>
+</body>
+</html>

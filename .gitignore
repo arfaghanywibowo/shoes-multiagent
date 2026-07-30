@@ -1,0 +1,13 @@
+# Secrets - DO NOT commit
+data/settings.json
+
+# Data files (generated at runtime)
+data/chats.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
