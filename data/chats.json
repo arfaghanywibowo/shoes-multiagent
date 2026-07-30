@@ -66,6 +66,20 @@
                 "text": "Berdasarkan panjang kaki Anda (**26 cm**), berikut adalah rekomendasi ukuran sepatu Anda:\n\n- **Ukuran EU**: 42 - 42.5\n- **Ukuran US**: 8.5 - 9\n\n*Catatan*: Tiap merk memiliki kecocokan yang sedikit berbeda (seperti Nike cenderung true to size, sedangkan Adidas terkadang disarankan up-size 0.5 untuk kenyamanan maksimal).",
                 "timestamp": "8:21 PM",
                 "agent": "Size Recommender Agent"
+            },
+            {
+                "id": "m_6a6ba2fae1845",
+                "sender": "user",
+                "text": "hai",
+                "timestamp": "9:16 PM",
+                "agent": null
+            },
+            {
+                "id": "m_6a6ba2fae3eb1",
+                "sender": "ai",
+                "text": "Halo! Saya adalah **Shoe Multi-Agent AI**, asisten konsultasi sepatu Anda. Saya memiliki 4 sub-agent ahli yang siap membantu:\n\n1. **Grade Analyzer Agent**: Tanyakan perbedaan Grade A & B atau detail kualitas sepatu.\n2. **Size Recommender Agent**: Tanyakan rekomendasi ukuran berdasarkan panjang kaki (cm).\n3. **Style Advisor Agent**: Mintalah saran padu padan pakaian\/outfit dengan sepatu Anda.\n4. **Stock Checker Agent**: Tanyakan stok dan harga sepatu di katalog kami.\n\nSilakan ajukan pertanyaan Anda mengenai sepatu secara spesifik agar saya dapat mengarahkan Anda ke agent yang tepat!",
+                "timestamp": "9:16 PM",
+                "agent": null
             }
         ]
     }
