@@ -2,6 +2,7 @@
 /**
  * Shoe Multi-Agent AI - Backend API Controller
  * Built-in PHP server router or direct script runner
+ * Vercel-compatible: reads API key from environment variable GEMINI_API_KEY
  */
 
 // Cors headers
@@ -14,9 +15,33 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     exit(0);
 }
 
-$productsFile = __DIR__ . '/data/products.json';
-$chatsFile = __DIR__ . '/data/chats.json';
-$settingsFile = __DIR__ . '/data/settings.json';
+// On Vercel, filesystem is read-only except /tmp.
+// Use /tmp for writable data, fall back to __DIR__ for local dev.
+$isVercel = isset($_SERVER['VERCEL']) || getenv('VERCEL');
+$dataDir  = $isVercel ? '/tmp/shoes_data' : __DIR__ . '/data';
+
+// Ensure data directory exists
+if (!is_dir($dataDir)) {
+    mkdir($dataDir, 0777, true);
+}
+
+// On Vercel first boot, copy seed files from static /data into /tmp so we have initial products
+$staticDataDir = __DIR__ . '/data';
+foreach (['products.json'] as $seedFile) {
+    $tmpPath    = $dataDir . '/' . $seedFile;
+    $staticPath = $staticDataDir . '/' . $seedFile;
+    if (!file_exists($tmpPath) && file_exists($staticPath)) {
+        copy($staticPath, $tmpPath);
+    }
+}
+
+$productsFile = $dataDir . '/products.json';
+$chatsFile    = $dataDir . '/chats.json';
+$settingsFile = $dataDir . '/settings.json';
+
+// Read Gemini API Key: prefer environment variable (set in Vercel dashboard),
+// then fall back to settings file for local dev.
+$envApiKey = getenv('GEMINI_API_KEY') ?: '';
 
 // Helper to read JSON database
 function readDb($file, $default = []) {
@@ -416,7 +441,8 @@ switch ($path) {
                 break;
             }
 
-            // Fetch settings for API key
+            // Fetch API key: environment variable takes priority (Vercel),
+            // then fall back to settings file (local dev / Settings page input).
             $settings = readDb($settingsFile, [
                 'darkMode' => true,
                 'notifications' => false,
@@ -424,7 +450,7 @@ switch ($path) {
                 'language' => 'Indonesia',
                 'geminiApiKey' => ''
             ]);
-            $geminiApiKey = $settings['geminiApiKey'] ?? '';
+            $geminiApiKey = !empty($envApiKey) ? $envApiKey : ($settings['geminiApiKey'] ?? '');
 
             // Append user message
             $userMsg = [
